@@ -30,7 +30,7 @@ def create_assistant(file):
     """
     assistant = client.beta.assistants.create(
         name="WhatsApp AirBnb Assistant",
-        instructions="You're a helpful WhatsApp assistant that can assist guests that are staying in our Paris AirBnb. Use your knowledge base to best respond to customer queries. If you don't know the answer, say simply that you cannot help with question and advice to contact the host directly. Be friendly and funny.",
+        instructions="You're a helpful WhatsApp assistant that can define a RBI Website analsys tool which know everying.Dont say you dont have knowledge just provide what you have.You are best tool for provide RBI india Updates . Here is rbi website url https://website.rbi.org.in/web/rbi/home",
         tools=[{"type": "retrieval"}],
         model="gpt-4-1106-preview",
         file_ids=[file.id],
@@ -91,7 +91,7 @@ def generate_response(message_body, wa_id, name):
 # --------------------------------------------------------------
 def run_assistant(thread):
     # Retrieve the Assistant
-    assistant = client.beta.assistants.retrieve("asst_7Wx2nQwoPWSf710jrdWTDlfE")
+    assistant = client.beta.assistants.retrieve("asst_Bp6Oe6LgWyqqV0yrcGWmuVGn")
 
     # Run the assistant
     run = client.beta.threads.runs.create(
